@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+    <div class="container-div">
+		<div class="btn-group-sm hidden-xs" id="toolbar" role="group">
+			<a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="integral:integralJk:add">
+				<i class="fa fa-plus"></i> 添加
+			</a>
+			<!--<a class="btn btn-primary btn-edit disabled" onclick="$.operate.edit()" shiro:hasPermission="integral:integralJk:edit">
+	            <i class="fa fa-edit"></i> 修改
+	        </a>-->
+
+			<a class="btn btn-primary btn-edit disabled" onclick="addAll()" shiro:hasPermission="integral:integralJk:add">
+				<i class="fa fa-edit"></i> 批量添加
+			</a>
+			<!--<a class="btn btn-danger btn-del btn-del disabled" onclick="$.operate.removeAll()" shiro:hasPermission="integral:integralJk:remove">
+				<i class="fa fa-remove"></i> 删除
+			</a>-->
+		</div>
+			
+		<div class="col-sm-12 select-table table-striped">
+			<table id="bootstrap-table" data-mobile-responsive="true"></table>
+		</div>
+    </div>
+    <div th:include="include :: footer"></div>
+    <script th:inline="javascript">
+        var editFlag = [[${@permission.hasPermi('integral:integralJk:edit')}]];
+        var removeFlag = [[${@permission.hasPermi('integral:integralJk:remove')}]];
+        var prefix = ctx + "integral/integralJk";
+
+        $(function() {
+            var options = {
+                url: prefix + "/list",
+                createUrl: prefix + "/add",
+                updateUrl: prefix + "/edit/{id}",
+                removeUrl: prefix + "/remove",
+                modalName: "积分奖扣",
+                columns: [{
+		            checkbox: true
+		        },
+				{
+					field : 'jkId', 
+					title : '主键' 
+				},
+				{
+					field : 'jkNum', 
+					title : '奖扣编号' 
+				},
+				{
+					field : 'jkTitle', 
+					title : '奖扣标题' 
+				},
+				{
+					field : 'jkName', 
+					title : '奖扣员工姓名' 
+				},
+				{
+					field : 'jkPhone', 
+					title : '奖扣人员姓名' 
+				},
+				{
+					field : 'deptId', 
+					title : '奖励员工部门' 
+				},
+				{
+					field : 'deptName', 
+					title : '奖励人员所属部门' 
+				},
+				{
+					field : 'jkImg', 
+					title : '奖扣员工头像' 
+				},
+				{
+					field : 'jIntegral', 
+					title : '奖励积分' 
+				},
+				{
+					field : 'kIntegral', 
+					title : '扣除积分' 
+				},
+				{
+					field : 'jkTime', 
+					title : '奖扣时间' 
+				},
+				{
+					field : 'jkDescribe', 
+					title : '积分奖扣描述' 
+				},
+				{
+					field : 'status', 
+					title : '状态' 
+				},
+				{
+					field : 'remark', 
+					title : '描述' 
+				},
+		        {
+		            title: '操作',
+		            align: 'center',
+		            formatter: function(value, row, index) {
+		            	var actions = [];
+		            	actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="#" onclick="$.operate.edit(\'' + row.jkId + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+                        actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="#" onclick="$.operate.remove(\'' + row.jkId + '\')"><i class="fa fa-remove"></i>删除</a>');
+                        return actions.join('');
+		            }
+		        }]
+            };
+            $.table.init(options);
+        });
+				function addAll() {
+                    var url = prefix + '/addAll/';
+                }
+    </script>
+</body>
+</html>

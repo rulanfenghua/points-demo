@@ -1,0 +1,294 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"su",
+				"successYes"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/integral/integralApproval/integralApproval.html",
+			"settings":
+			{
+				"buffer_size": 7198,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/ruoyi/js/ry-ui.js",
+			"settings":
+			{
+				"buffer_size": 30165,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/static",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/static/ruoyi",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/static/ruoyi/css",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/static/ruoyi/js",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/integral",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/integral/integralApproval",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/integral/pdIntegral"
+	],
+	"file_history":
+	[
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/integral/integralApproval/add.html",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/integral/integralApproval/edit.html",
+		"/D/Program Files/work/RuoYi/ruoyi-admin/src/main/resources/templates/login.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"D:\\Program Files\\work\\RuoYi\\ruoyi-admin\\src\\main\\resources",
+			"",
+			"D:\\Program Files\\work\\RuoYi",
+			"D:\\Program Files\\work\\RuoYi\\ruoyi-admin\\src\\main\\resources,D:\\Program Files\\work\\RuoYi\\ruoyi-admin",
+			"D:\\Program Files\\work\\RuoYi\\ruoyi-admin\\src\\main\\resources",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"value",
+			"btn-danger",
+			"operate",
+			"removeUrl",
+			"modal",
+			"table",
+			"ctx",
+			"bootstrap-table",
+			"审批管理",
+			"积分审批",
+			"积分审批管理"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\Program Files\\work\\RuoYi\\ruoyi-admin\\src\\main\\resources"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/integral/integralApproval/integralApproval.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6500,
+								6500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/ruoyi/js/ry-ui.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18004,
+								18004
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6902.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
